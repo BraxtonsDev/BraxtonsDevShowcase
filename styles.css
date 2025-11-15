@@ -1,3 +1,7 @@
+
+html{
+    cursor: url('cursorsite.png'), auto;
+}
 body {
     background-color: black;
     color: white;
@@ -54,12 +58,44 @@ p {
 
 .nice_button {
     display: inline-block;
+    justify-content: center;
     background: black;
     color: white;
     padding: 10px 20px;
     border: 2px solid white;
     text-decoration: none;
     font-family: 'Courier New', monospace;
+}
+
+.evil_button {
+    display: inline-block;
+    justify-content: center;
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    border: 2px solid white;
+    text-decoration: none;
+    font-family: 'Courier New', monospace;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20%;
+}
+
+.nice_button:hover {
+    border-radius: 3px;
+    justify-content: center;
+    cursor: url('grabsite.png'), auto;
+}
+
+.evil_button{
+    border-radius: 3px;
+    justify-content: center;
+    cursor: url('grabsite.png'), auto;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
 }
 
 /* mobile stuff :p */
