@@ -32,19 +32,37 @@ body {
 .outline_box {
     position: relative;
     padding: 20px;
-    border: none;
+    border: 20px solid transparent;
+    border-image: url('border.png') 20 stretch;
 }
 
-.outline_box::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 20px solid transparent;
-    border-image: url('border.png') 20 round;
+.leaf{
+    position:fixed;
     pointer-events: none;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    animation: fall 10s linear forwards;
+    top: -50px;
+    left: 100px;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0vh) rotate(0deg);
+  }
+  100% {
+    transform: translateY(120vh) rotate(359deg);
+    }
+}
+
+@keyframes evilfall {
+  0% {
+    transform: translateY(0vh) rotate(0deg);
+  }
+  100% {
+    transform: translateY(120vh) rotate(-359deg);
+    }
 }
 
 h1, h2 {
@@ -78,7 +96,7 @@ p {
     font-family: 'Courier New', monospace;
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 20%;
+    margin-top: 15%;
 }
 
 .nice_button:hover {
