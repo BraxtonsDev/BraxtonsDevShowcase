@@ -1,3 +1,13 @@
+function isWinter(){
+    const date = new Date();
+
+    if(date.getMonth() === 11 || date.getMonth() === 0 || date.getMonth() === 1){ //months is js are [0 - 11]. 11 = dec, 0 = jan, 1 = feb
+        return true;
+    }else{
+        return false;
+    }
+}
+
 function createLeaf(){
     let leaf = document.createElement("div");
 
@@ -5,7 +15,13 @@ function createLeaf(){
     let r = Math.random();
 
     leaf.classList.add('leaf');
-    leaf.innerHTML = `<img src="leafsite.png" alt="">`;
+
+    if(isWinter()){
+        leaf.innerHTML = `<img src="crackflake.png" alt="">`;
+    }else{
+        leaf.innerHTML = `<img src="leafsite.png" alt="">`;
+    }
+
     leaf.style.left = x + "px";
 
     document.body.appendChild(leaf);
