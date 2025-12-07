@@ -1,3 +1,6 @@
+* {
+  user-select: none;
+}
 
 html{
     cursor: url('cursorsite.png'), auto;
@@ -118,7 +121,45 @@ p {
 
 #trademark{
     display: flex;
-    justify-content: left;
+    justify-content: baseline;
+}
+
+#folder{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#folder:hover{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+
+#display{
+    display: none;
+    border: 5px solid white;
+    border-radius: 10px;
+    margin: auto;
+    width: 50vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    margin-bottom: 50px;
+
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.video {
+    width: 100%;
+    height: auto;
+    width: 100%;
+    border: 5px solid white;
+    border-radius: 10px;
+    object-fit: contain;
 }
 
 /* mobile stuff :p */
