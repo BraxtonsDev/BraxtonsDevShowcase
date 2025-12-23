@@ -1,21 +1,5 @@
 var isDisplayed = false;
 
-function displayFolder()
-{
-    if(isDisplayed)
-    {
-        display = document.getElementById("display");
-        display.style.display = "none";
-        isDisplayed = false;
-    }
-    else
-    {
-        display = document.getElementById("display");
-        display.style.display = "grid";
-        isDisplayed = true;
-    }
-}
-
 function isWinter(){
     const date = new Date();
 
