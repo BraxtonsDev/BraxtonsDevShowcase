@@ -3,11 +3,16 @@ var isDisplayed = false;
 function isWinter(){
     const date = new Date();
 
-    if(date.getMonth() === 11 || date.getMonth() === 0 || date.getMonth() === 1){ //months is js are [0 - 11]. 11 = dec, 0 = jan, 1 = feb
+    if(date.getMonth() === 11 || date.getMonth() === 0 || date.getMonth() === 1){ //months in js are [0 - 11]. 11 = dec, 0 = jan, 1 = feb
         return true;
     }else{
         return false;
     }
+}
+
+function toggleTheme() {
+    const isLight = document.body.classList.toggle('light_mode');
+    document.getElementById('theme_toggle').textContent = isLight ? '☾' : '☀';
 }
 
 function createLeaf(){

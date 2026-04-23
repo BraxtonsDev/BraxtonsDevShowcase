@@ -5,40 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BraxtonsDev</title>
     <link rel="stylesheet" href="styles.css">
-    <script src = "script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div id="intro" class="outline_box">
-        <h1>BraxtonsDev</h1>
-        <p>A game developer striving to obtain his computing science degree with a minor in mathematics.</p>
-    </div>
 
-    <div class="project_container">
-        <div class="project outline_box">
-            <h2>Radiation Hazard</h2>
-            <p>Descend an elevator into the depths of "the mines". A friendslop horror project made in Unity 6 to learn how to work with steam/mirror networking.<br><br>Development in progress</p>
-            <a href="https://store.steampowered.com/app/3027300/Radiation_Hazard/" class="nice_button">View</a>
-        </div>
-        <div class="project outline_box">
-            <h2>An Invitation To Cards</h2>
-            <p>A psychological horror game made in Unity 6 based on playing a mysterious mans game of cards, while attempting to escape his house. <br><br>Development in progress</p>
-            <a href="inprogress.html" class="nice_button">View</a>
-        </div>
-        <div class="project outline_box">
-            <h2>Crop Hunt</h2>
-            <p>A single-player Godot 4 game made for the DreadXP Game Jam where you crash into an old corn field, and survive the creature inside. <br><br>Development Finished</p>
-            <a href="https://braxtonsdev.itch.io/crop-hunt" class="nice_button">View</a>
-        </div>
-    </div>
+<button id="theme_toggle" onclick="toggleTheme()">☀</button>
 
-    <div class = "links">
-        <a href="https://github.com/BraxtonsDev" class="evil_button">Git</a>
-        <a href="https://www.linkedin.com/in/braxton-wyssen-69099b324/" class="evil_button">LinkedIn</a>
-        <a href="https://www.youtube.com/channel/UC5KUZcLv5QwNZUsDPFrwKZQ" class="evil_button">YouTube</a>
-    </div>
+<div class="site_wrapper">
+    <div class="main_content">
 
-    <footer id = "trademark">
-        <p>© 2025 braxtonsdev</p>
-    </footer>
+        <div id="intro" class="outline_box border_a">
+            <h1>BraxtonsDev</h1>
+            <p>Game developer & Computing Science student.</p>
+            <p class="degree_tag">BSc in Computing Science, Minor in Mathematics — Thompson Rivers University</p>
+        </div>
+
+        <div class="section_header">
+            <div class="section_icon icon_flip_a">
+                <!-- <img src="header_games.png" alt="games"> -->
+            </div>
+        </div>
+        <div class="project_container">
+            <div class="project outline_box border_b">
+                <h2>Radiation Hazard</h2>
+                <p>Descend into "the mines". A friendslop horror project built in Unity 6 with Steam & Mirror networking.<br><br>
+                <span class="tag">In Progress</span></p>
+                <a href="https://store.steampowered.com/app/3027300/Radiation_Hazard/" class="nice_button">View on Steam</a>
+            </div>
+            <div class="project outline_box border_c">
+                <h2>A Strange Game About Hiking</h2>
+                <p>A strange game about hiking. By BraxtonsDev.<br><br>
+                <span class="tag">In Progress</span></p>
+                <a href="inprogress.html" class="nice_button">View</a>
+            </div>
+            <div class="project outline_box border_d">
+                <h2>Crop Hunt</h2>
+                <p>Crash into an old corn field, and survive what's inside. Made for the DreadXP Game Jam in Godot 4.<br><br>
+                <span class="tag">Finished</span></p>
+                <a href="https://braxtonsdev.itch.io/crop-hunt" class="nice_button">View on itch.io</a>
+            </div>
+        </div>
+
+        <hr class="section_divider">
+
+        <div class="section_header">
+            <div class="section_icon icon_flip_b">
+                <!-- <img src="header_projects.png" alt="projects"> -->
+            </div>
+        </div>
+        <div class="project_container">
+            <div class="project outline_box border_e">
+                <h2>NetCube</h2>
+                <p>Live network traffic visualized as a spinning 3D wireframe cube. Built in C & OpenGL for Windows.<br><br>
+                <span class="tag">Finished</span></p>
+                <!-- <a href="https://github.com/BraxtonsDev" class="nice_button">View on GitHub</a> -->
+            </div>
+            <div class="project outline_box border_f">
+                <h2>GameBlob</h2>
+                <p>A game dev forum built with Next.js, Prisma, and PostgreSQL.<br><br>
+                <span class="tag">In Progress</span></p>
+                <!-- <a href="inprogress.html" class="nice_button">View</a> -->
+            </div>
+            <div class="project outline_box border_b">
+                <h2>Plant Bot V2</h2>
+                <p>An ESP32-based automated plant watering bot with a custom PCB.<br><br>
+                <span class="tag">In Progress</span></p>
+                <!-- <a href="inprogress.html" class="nice_button">View</a> -->
+            </div>
+        </div>
+
+        <div class="links">
+            <a href="https://github.com/BraxtonsDev" class="evil_button">GitHub</a>
+            <a href="https://www.linkedin.com/in/braxton-wyssen-69099b324/" class="evil_button">LinkedIn</a>
+            <a href="https://www.youtube.com/channel/UC5KUZcLv5QwNZUsDPFrwKZQ" class="evil_button">YouTube</a>
+        </div>
+
+        <footer id="trademark">
+            <p>© 2025 braxtonsdev</p>
+        </footer>
+
+    </div>
+</div>
 </body>
 </html>
