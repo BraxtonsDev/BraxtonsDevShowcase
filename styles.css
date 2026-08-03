@@ -23,6 +23,10 @@ body.light_mode {
     background-color: white;
 }
 
+body.light_mode .video_wrapper {
+    filter: invert(1);
+}
+
 .site_wrapper {
     max-width: 960px;
     margin: 0 auto;
@@ -312,7 +316,7 @@ p {
 }
 
 @media (max-width: 768px) {
-    body { padding: 10px; }
+    body { padding: 24px 14px; }
 
     .project_container {
         flex-direction: column;
