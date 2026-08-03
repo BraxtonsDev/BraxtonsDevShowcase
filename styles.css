@@ -316,7 +316,7 @@ p {
 }
 
 @media (max-width: 768px) {
-    body { padding: 24px 14px; }
+    body { padding: 24px; }
 
     .project_container {
         flex-direction: column;
